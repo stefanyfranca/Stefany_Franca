@@ -66,7 +66,7 @@ section {
 article {
     margin: 15px;
     flex: 1 1 250px;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 article img {
@@ -88,15 +88,15 @@ article p {
         height: auto;
     }
 
-    body > header > a {         /*aumentar o tamanho da logo*/
+    body > header > a {                   /*aumentar o tamanho da logo*/
         font-size: 50px;
     }
  
     header a {
-        margin: 10px;           /*margem entre os textos os itens da lista*/
+        margin: 10px;                     /*margem entre os textos os itens da lista*/
     }
 
-    header ul {
+    header ul {                           /*transformar os elementos li's de horizontais para verticais*/
         flex-direction: column; 
         font-size: 20px;
         align-items: stretch;
@@ -108,13 +108,16 @@ article p {
         gap: 10px;
     }
 
-    section {
+    section {                                /*deixar a section centralizada*/
         flex-direction: column;
-        margin: 5vw 5vw;        
+        margin: 5vw 5vw;      
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
 
     article p {
         text-align: center;
-        font-size: 30px; /*aumentar a fonte da legenda em 10px*/
+        font-size: 30px;                    /*aumentar a fonte da legenda em 10px*/
     }
 }
