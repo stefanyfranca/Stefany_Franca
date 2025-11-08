@@ -7,10 +7,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fefefe;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Consolas, "Courier New", monospace;
 }
 
-/* Header e menu */
 header {
     background-color: #1d1f20;
     display: flex;
@@ -18,7 +17,7 @@ header {
     align-items: center;
     width: 100%;
     height: 70px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: Consolas, "Courier New", monospace;
 }
 
 body > header > a {
@@ -89,12 +88,12 @@ article p {
         height: auto;
     }
 
-    body > header > a {      /*aumentar o tamanho da logo*/
+    body > header > a {         /*aumentar o tamanho da logo*/
         font-size: 50px;
     }
-
+ 
     header a {
-        margin: 10px; /*margem entre os textos os itens da lista*/
+        margin: 10px;           /*margem entre os textos os itens da lista*/
     }
 
     header ul {
@@ -111,7 +110,7 @@ article p {
 
     section {
         flex-direction: column;
-        margin: 5vw 5vw;           /*5% a esquerda*/
+        margin: 5vw 5vw;        
     }
 
     article p {
