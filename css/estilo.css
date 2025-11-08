@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Header e menu */
+header {
+    background-color: #1d1f20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+body > header > a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+body > header ul {
+    display: flex;
+    list-style: none;
+}
+
+body > header ul a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+body > header li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+    height: auto;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px 40px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 5vw;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+article {
+    margin: 15px;
+    flex: 1 1 250px;
+    max-width: 400px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+
+article p {
+    text-align: center;
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+/* Responsivo */
+@media (max-width: 670px) {
+
+    header{
+        height: auto;
+    }
+
+    body > header > a {      /*aumentar o tamanho da logo*/
+        font-size: 50px;
+    }
+
+    header a {
+        margin: 10px; /*margem entre os textos os itens da lista*/
+    }
+
+    header ul {
+        flex-direction: column; 
+        font-size: 20px;
+        align-items: stretch;
+    }
+
+    body > header li a {
+        background-color: #aaaaaa;
+        padding: 0px 0px;
+        gap: 10px;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 5vw 5vw;           /*5% a esquerda*/
+    }
+
+    article p {
+        text-align: center;
+        font-size: 30px; /*aumentar a fonte da legenda em 10px*/
+    }
+}
